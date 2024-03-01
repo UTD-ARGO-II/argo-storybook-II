@@ -6,7 +6,7 @@ import Link from '@mui/material/Link';
 function handleClick(event:React.MouseEvent) {
   event.preventDefault();
   console.info('You clicked a breadcrumb.');
-}
+}    
 
 export default function BasicBreadcrumbs() {
   return (
