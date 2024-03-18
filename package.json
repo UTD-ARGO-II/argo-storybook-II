@@ -92,6 +92,8 @@
     ]
   },
   "dependencies": {
+    "@fontsource/material-icons": "^5.0.16",
+    "@fontsource/roboto": "^5.0.12",
     "react-docgen-typescript": "^2.2.2"
   }
 }
