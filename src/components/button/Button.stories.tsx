@@ -19,6 +19,20 @@ Primary.args = {
 	label: 'Button'
 };
 
+export const PrimaryDisabledFig = Template.bind({});
+PrimaryDisabledFig.parameters = {
+	design: {
+		type: 'figma',
+		url: 'https://www.figma.com/file/J6poyIak1EygqUcGFQNCuY/UTD-BHCC-Design-Library?node-id=1035%3A9749&mode=dev'
+	}
+}
+PrimaryDisabledFig.args = {
+	variant: 'primary',
+	label: 'Button',
+	disabled: true
+	
+};
+
 export const Secondary = Template.bind({});
 Secondary.args = {
 	label: 'Button'
