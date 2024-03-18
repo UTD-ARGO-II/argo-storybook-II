@@ -5,50 +5,69 @@ import Button from "./Button";
 export default {
   title: "Inputs/Button",
   component: Button,
+  argTypes: {
+    color: { control: { type: "color" } },
+    hoverColor: { control: { type: "color" } },
+  },
 } as ComponentMeta<typeof Button>;
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
-  variant: "text",
-  children: "Default",
-};
-
-export const Contained = Template.bind({});
-Contained.args = {
-  variant: "contained",
-  children: "Contained",
-};
-
-export const Outlined = Template.bind({});
-Outlined.args = {
-  variant: "outlined",
-  children: "outlined",
-};
-
-export const Disabled = Template.bind({});
-Disabled.args = {
-  disabled: true,
-  children: "disabled",
+export const Primary = Template.bind({});
+Primary.args = {
+  variant: "primary",
+  label: "Button",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  color: "secondary",
-  children: "secondary",
+  label: "Button",
 };
 
-export const Success = Template.bind({});
-Success.args = {
-  color: "success",
-  variant: "contained",
-  children: "success",
+export const Quiet = Template.bind({});
+Quiet.args = {
+  variant: "quiet",
+  label: "Button",
 };
 
-export const Error = Template.bind({});
-Error.args = {
-  color: "error",
-  variant: "outlined",
-  children: "error",
+export const PrimaryDanger = Template.bind({});
+PrimaryDanger.args = {
+  variant: "primary-danger",
+  label: "Button",
+};
+
+export const SecondaryDanger = Template.bind({});
+SecondaryDanger.args = {
+  variant: "secondary-danger",
+  label: "Button",
+};
+
+export const DisabledButton = Template.bind({});
+DisabledButton.args = {
+  variant: "quiet",
+  label: "Button",
+  disabled: true,
+};
+
+export const Small = Template.bind({});
+Small.args = {
+  size: "small",
+  label: "Button",
+};
+
+export const Large = Template.bind({});
+Large.args = {
+  size: "large",
+  label: "Button",
+};
+
+export const HelloWorld = Template.bind({});
+HelloWorld.args = {
+  variant: "primary",
+  label: "Hello World!",
+  onClick: () => {
+    const hello = document.createElement("p");
+    hello.textContent = "Hi there!";
+    document.body.append(hello);
+  },
 };
