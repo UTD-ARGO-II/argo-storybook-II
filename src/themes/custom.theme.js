@@ -4,6 +4,7 @@ import turquoise from "../colors/turquoise";
 
 export const customTheme = createTheme({
   palette: {
+    contrastThreshold: 4.5,
     mode: "dark",
     primary: {
       main: fireengine["200"],

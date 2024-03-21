@@ -14,7 +14,7 @@ export const utdTheme = createTheme({
     },
     background: {
       default: white,
-      paper: orange["50"],
+      paper: orange["700"],
     },
   },
 });
