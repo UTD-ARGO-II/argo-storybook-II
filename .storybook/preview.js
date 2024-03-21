@@ -8,6 +8,7 @@ import "@fontsource/material-icons";
 import { darkTheme } from "../src/themes/dark.theme";
 import { lightTheme } from "../src/themes/light.theme";
 import { customTheme } from "../src/themes/custom.theme";
+import { utdTheme } from "../src/themes/utd.theme"
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { useMemo } from "react";
 
@@ -34,7 +35,8 @@ export const globalTypes = {
       items: [
         { value: "light", left: "☀️", title: "Light mode" },
         { value: "dark", left: "🌙", title: "Dark mode" },
-        { value: "custom", left: " ", title: "Custom theme"}
+        { value: "custom", left: " ", title: "Custom theme"},
+        { value: "utd", left: " ", title: "utd theme"}
       ],
     },
   },
@@ -43,7 +45,8 @@ export const globalTypes = {
 const THEMES = {
   light: lightTheme,
   dark: darkTheme,
-  custom: customTheme
+  custom: customTheme,
+  utd: utdTheme
 };
 
 export const withMuiTheme = (Story, context) => {
