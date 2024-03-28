@@ -13,5 +13,11 @@ const Template: ComponentStory<typeof RadioButton> = (args) => (
 );
 
 export const Default = Template.bind({});
+Default.parameters = {
+	design: {
+		type: 'figma',
+		url: 'https://www.figma.com/file/WrbYfhYCrGCb7BUOPSCCRB/ARGO-X-design-library?node-id=982%3A3716&mode=dev'
+	}
+}
 Default.args = {
 };
