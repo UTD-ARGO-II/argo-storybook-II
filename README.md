@@ -51,11 +51,11 @@ This library can be used with the [Storybook GPT](https://chat.openai.com/g/g-C3
 ### Current Members (2024)
 
 - [@Timothy Naumov](https://github.com/TimothyNaumov)
-- [@Lillie McMaster] (https://github.com/lilliemcmaster) (Team Lead)
+- [@Lillie McMaster](https://github.com/lilliemcmaster) (Team Lead)
 - [@Lauren Nguyenphu](https://github.com/LNP19)
 - [@Iman Sheriff](https://github.com/imans12)
 - [@Alina Khan](https://github.com/gimmedemnomnoms)
-- [@Hamdiya Abdulhafiz] (https://github.com/ahamdiya01)
+- [@Hamdiya Abdulhafiz](https://github.com/ahamdiya01)
 
 ### Previous Members (2023)
 
