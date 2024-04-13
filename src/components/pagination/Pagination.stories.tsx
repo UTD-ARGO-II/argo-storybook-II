@@ -44,38 +44,6 @@ Default.args = {};
 
 //add stories
 
-// GPT Generated Stories...
-
-export const GPTRandomPagination = Template.bind({});
-GPTRandomPagination.args = {
-  count: 10, // Total number of pages
-  page: 1, // Current page
-  color: 'primary', // Pagination color
-  variant: 'outlined', // Pagination variant
-  shape: 'rounded', // Shape of the pagination items
-  size: 'large', // Size of the pagination
-  renderItem: (item) => (
-    <PaginationItem
-      components={{ previous: StarIcon, next: StarIcon }}
-      {...item}
-    />
-  ),
-  // Custom styles applied through sx prop
-  sx: {
-    "& .MuiPaginationItem-root": {
-      color: '#2962FF', // ARGO's secondary color for text
-    },
-    "& .MuiPaginationItem-root.Mui-selected": {
-      backgroundColor: '#2962FF', // ARGO's secondary color for the background of the selected item
-      color: '#ffffff', // Text color for selected item
-    },
-    "& .MuiPaginationItem-root:hover": {
-      backgroundColor: '#ECF1FF', // ARGO's hover light color for hover background
-    },
-  },
-  onChange: (event, page) => console.log(`Current page: ${page}`), // Event handler for page change
-};
-
 // Adjusting the Template to include state management for demonstration
 const InteractiveTemplate: ComponentStory<typeof Pagination> = (args) => {
   const [page, setPage] = useState(1); // Initializing state to track current page
@@ -87,6 +55,36 @@ const InteractiveTemplate: ComponentStory<typeof Pagination> = (args) => {
       onChange={(event, newPage) => setPage(newPage)} // Updating state when page changes
     />
   );
+};
+
+// GPT Generated Stories...
+
+export const GPTRandomPagination = InteractiveTemplate.bind({});
+GPTRandomPagination.args = {
+  count: 10, // Total number of pages
+  page: 1, // Current page
+  color: 'primary', // Pagination color
+  variant: 'outlined', // Pagination variant
+  shape: 'rounded', // Shape of the pagination items
+  size: 'large', // Size of the pagination
+  renderItem: (item) => (
+    <PaginationItem
+      components={{ previous: StarIcon, next: StarIcon }}
+      {...item}
+      sx= {{
+        "& .MuiPaginationItem-root": {
+          color: '#2962FF', // ARGO's secondary color for text
+        },
+        "& .MuiPaginationItem-root.Mui-selected": {
+          backgroundColor: '#2962FF', // ARGO's secondary color for the background of the selected item
+          color: '#ffffff', // Text color for selected item
+        },
+        "& .MuiPaginationItem-root:hover": {
+          backgroundColor: '#ECF1FF', // ARGO's hover light color for hover background
+        },
+      }}
+    />
+  ),
 };
 
 export const ArgoPagination2 = InteractiveTemplate.bind({});
