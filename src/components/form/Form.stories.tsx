@@ -20,6 +20,7 @@ const Template: ComponentStory<typeof Form> = (args) => (
 	<Form {...args} />
 );
 
+
 const textfield: React.ReactNode = (
 	<div>
 		<TextField label='Textfield' size='small' width={210}/>
@@ -66,6 +67,12 @@ const radiogroup: React.ReactNode = (
 const sampleMatrix = [[textfield,textfield],[dropdown, dropdown], [checkboxes], [radiogroup], [largefield]];
 
 export const Default = Template.bind({});
+Default.parameters = {
+	design: {
+	  type: 'figma',
+	  url: 'https://www.figma.com/file/WrbYfhYCrGCb7BUOPSCCRB/ARGO-X-design-library?node-id=3876%3A7471&mode=dev'
+	}
+}
 Default.args = {
 	formMatrix: sampleMatrix,
 	title: 'Sample Form'

@@ -19,6 +19,12 @@ const Template: ComponentStory<typeof Tooltip> = (args) =>
     </div>
 
 export const Default = Template.bind({});
+Default.parameters = {
+    design: {
+          type: 'figma',
+          url: 'https://www.figma.com/file/WrbYfhYCrGCb7BUOPSCCRB/ARGO-X-design-library?node-id=1017%3A11704&mode=dev'
+      }
+  }
 Default.args = {
     title: 'This is a tooltip'
 };

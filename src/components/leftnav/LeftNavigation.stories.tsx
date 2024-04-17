@@ -32,7 +32,12 @@ const items = [
 	{ label: 'About', icon: <Info /> },
 	{ label: 'Help', icon: <HelpOutline /> }
 ] as LNItem[];
-
+SideRail.parameters = {
+	design: {
+	  type: 'figma',
+	  url: 'https://www.figma.com/file/UKAhg88xvcWT8M4NjF2YYk/Playground?node-id=1104%3A15001&mode=dev'
+	}
+  }
 SideRail.args = {
 	listItems: items
 };

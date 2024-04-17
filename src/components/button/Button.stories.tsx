@@ -11,32 +11,63 @@ export default {
     }
 } as ComponentMeta<typeof Button>;
 
+
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
+Primary.parameters = {
+	design: {
+	  type: 'figma',
+	  url: 'https://www.figma.com/file/WrbYfhYCrGCb7BUOPSCCRB/ARGO-X-design-library?node-id=1035%3A9744&mode=dev'
+	}
+  }
 Primary.args = {
 	variant: 'primary',
 	label: 'Button'
 };
 
 export const Secondary = Template.bind({});
+Secondary.parameters = {
+	design: {
+	  type: 'figma',
+	  url: 'https://www.figma.com/file/WrbYfhYCrGCb7BUOPSCCRB/ARGO-X-design-library?node-id=1076%3A10085&mode=dev'
+	}
+}
 Secondary.args = {
 	label: 'Button'
 };
 
 export const Quiet = Template.bind({});
+Quiet.parameters = {
+	design: {
+	  type: 'figma',
+	  url: 'https://www.figma.com/file/WrbYfhYCrGCb7BUOPSCCRB/ARGO-X-design-library?node-id=1076%3A10126&mode=dev'
+	}
+}
 Quiet.args = {
 	variant: 'quiet',
 	label: 'Button'
 };
 
 export const PrimaryDanger = Template.bind({});
+PrimaryDanger.parameters = {
+	design: {
+	  type: 'figma',
+	  url: 'https://www.figma.com/file/WrbYfhYCrGCb7BUOPSCCRB/ARGO-X-design-library?node-id=1076%3A10167&mode=dev'
+	}
+}
 PrimaryDanger.args = {
 	variant: 'primary-danger',
 	label: 'Button'
 };
 
 export const SecondaryDanger = Template.bind({});
+SecondaryDanger.parameters = {
+	design: {
+	  type: 'figma',
+	  url: 'https://www.figma.com/file/WrbYfhYCrGCb7BUOPSCCRB/ARGO-X-design-library?node-id=1076%3A10208&mode=dev'
+	}
+}
 SecondaryDanger.args = {
 	variant: 'secondary-danger',
 	label: 'Button'

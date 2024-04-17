@@ -12,6 +12,12 @@ export default {
 const Template: ComponentStory<typeof Tab> = (args) => <Tab {...args} />;
 
 export const Primary = Template.bind({});
+Primary.parameters = {
+	design: {
+	  type: 'figma',
+	  url: 'https://www.figma.com/file/WrbYfhYCrGCb7BUOPSCCRB/ARGO-X-design-library?node-id=982%3A3427&mode=dev'
+	}
+  }
 Primary.args = {
 	labels: ['Tab1', 'Tab2', 'Tab3']
 };

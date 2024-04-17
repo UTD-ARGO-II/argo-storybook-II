@@ -14,6 +14,12 @@ export default {
 const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
 
 export const Global = Template.bind({});
+Global.parameters = {
+	design: {
+	  type: 'figma',
+	  url: 'https://www.figma.com/file/WrbYfhYCrGCb7BUOPSCCRB/ARGO-X-design-library?node-id=3005%3A7864&mode=dev'
+	}
+}
 Global.args = {
 	title: 'Title',
 	variant: 'global',
