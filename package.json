@@ -24,7 +24,8 @@
     "build": "rollup -c --bundleConfigAsCjs && copyfiles README.md ./dist",
     "release": "cd dist && npm publish --access public",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "npx chromatic --project-token chpt_d37e6cb3e53ed4d"
   },
   "peerDependencies": {
     "@emotion/react": "^11.10.6",
@@ -57,7 +58,7 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "babel-plugin-named-exports-order": "^0.0.2",
-    "chromatic": "^6.17.0",
+    "chromatic": "^11.3.0",
     "copyfiles": "^2.4.1",
     "css-loader": "^6.7.3",
     "material-react-table": "^1.9.2",
@@ -96,5 +97,7 @@
     "@fontsource/material-icons": "^5.0.16",
     "@fontsource/roboto": "^5.0.12",
     "react-docgen-typescript": "^2.2.2"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "@utd-argo-ii/ux-master-library@0.4.3"
 }
