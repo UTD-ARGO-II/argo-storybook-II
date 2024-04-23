@@ -13,11 +13,9 @@ function BookList() {
 	const images = [img1, img2, img3, img4];
 	return (
 		<div>
-			<div className="title"> Top Picks </div>
 			<div className="bookInfo">
 				{BookInfo.map((book: BookData, i: number) => (
 					<div className="completeBookDiv">
-						<div className="number">{i + 1}</div>
 						<div className="image">
 							<BookLayout
 								variant="left"

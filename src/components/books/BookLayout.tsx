@@ -30,7 +30,7 @@ function headerComponent(header: string) {
 
 function subheaderComponent(subheader: string) {
 	if (subheader) {
-		return (<div> <p className='subheader'> {subheader} </p> </div>);
+		return (<><br/> <div className='div'> <h4  className='header'> {subheader} </h4> </div></>);
 	}
 }
 
