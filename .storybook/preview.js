@@ -7,6 +7,9 @@ import "@fontsource/material-icons";
 
 import { darkTheme } from "../src/themes/dark.theme";
 import { lightTheme } from "../src/themes/light.theme";
+import { rainforestTheme } from "../src/themes/rainforest.theme";
+import { argoTheme } from "../src/themes/argo.theme";
+import { utdTheme } from "../src/themes/utd.theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { useMemo } from "react";
 
@@ -33,6 +36,9 @@ export const globalTypes = {
       items: [
         { value: "light", left: "☀️", title: "Light mode" },
         { value: "dark", left: "🌙", title: "Dark mode" },
+        { value: "rain", left: " ", title: "rainforest theme"},
+        { value: "argo", left: " ", title: "ARGO theme"},
+        { value: "utd", left: " ", title: "UTD theme"}
       ],
     },
   },
@@ -41,6 +47,9 @@ export const globalTypes = {
 const THEMES = {
   light: lightTheme,
   dark: darkTheme,
+  rain: rainforestTheme,
+  argo: argoTheme,
+  utd: utdTheme
 };
 
 export const withMuiTheme = (Story, context) => {

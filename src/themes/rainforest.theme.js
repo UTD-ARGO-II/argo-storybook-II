@@ -1,18 +1,19 @@
 import { createTheme } from "@mui/material";
 import { blueGrey, cyan, pink } from "@mui/material/colors";
+import rainforest from "../colors/rainforest";
 
 export const rainforestTheme = createTheme({
     palette: {
       mode: "dark",
       primary: {
-        main: pink["A200"],
+        main: rainforest["500"],
       },
       secondary: {
-        main: cyan["A400"],
+        main: rainforest["400"],
       },
       background: {
-        default: blueGrey["800"],
-        paper: blueGrey["700"],
+        default: rainforest["800"],
+        paper: rainforest["700"],
       },
     },
   });
