@@ -24,13 +24,13 @@ function badgeComponent(badge: string) {
 
 function headerComponent(header: string) {
 	if (header) {
-		return (<div className='headerDiv'> <h3 className='header'> {header} </h3> </div>);
+		return (<div style={{marginBottom: '10px', fontWeight: 'bold'}}> <h3 style={{marginTop: 0, marginBottom: 0}}> {header} </h3> </div>);
 	}
 }
 
 function subheaderComponent(subheader: string) {
 	if (subheader) {
-        return (<div> <p className='subheader'> {subheader} </p> </div>);
+        return (<div> <h4 style={{marginTop: '1rem'}}> {subheader} </h4> </div>);
     }
 }
 
