@@ -20,6 +20,12 @@ const Template: ComponentStory<typeof Alert> = (args) => (
 );
 
 export const Default = Template.bind({});
+Default.parameters = {
+	design: {
+	  type: 'figma',
+	  url: 'https://www.figma.com/file/WrbYfhYCrGCb7BUOPSCCRB/ARGO-X-design-library?node-id=1087%3A16551&mode=dev'
+	}
+}
 Default.args = {
 	value: 1,
 	max: 10,

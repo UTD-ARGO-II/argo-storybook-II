@@ -13,6 +13,12 @@ const Template: ComponentStory<typeof Accordion> = (args) => (
 );
 
 export const Default = Template.bind({});
+Default.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/WrbYfhYCrGCb7BUOPSCCRB/ARGO-X-design-library?node-id=1004%3A10869&mode=dev'
+  }
+}
 Default.args = {
   header: "Title1",
   children: (
@@ -25,6 +31,12 @@ Default.args = {
 };
 
 export const Primary = Template.bind({});
+Primary.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/WrbYfhYCrGCb7BUOPSCCRB/ARGO-X-design-library?node-id=1004%3A10869&mode=dev'
+  }
+}
 Primary.args = {
   header: "Title2",
   children: (

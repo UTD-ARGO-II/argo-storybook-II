@@ -16,6 +16,12 @@ export default {
 const Template: ComponentStory<typeof Card> = (args) => <Card {...args}></Card>;
 
 export const Default = Template.bind({});
+Default.parameters = {
+	design: {
+	  type: 'figma',
+	  url: 'https://www.figma.com/file/WrbYfhYCrGCb7BUOPSCCRB/ARGO-X-design-library?node-id=978%3A3411&mode=dev'
+	}
+}
 Default.args = { style: { width: 400, height: 400 } };
 
 export const Sectioned = Template.bind({});

@@ -11,4 +11,10 @@ const Template: ComponentStory<typeof FilterChip> = (args) => (
 );
 
 export const Default = Template.bind({});
+Default.parameters = {
+	design: {
+	  type: 'figma',
+	  url: 'https://www.figma.com/file/UKAhg88xvcWT8M4NjF2YYk/Playground?node-id=1246%3A18676&mode=dev'
+	}
+  }
 Default.args = { value: 'Filter' };
