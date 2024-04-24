@@ -19,7 +19,7 @@ export const BookInfo = [
         rating: 4.18 
     },
     {
-        title: 'Six of Crows',
+        title: 'The City of Brass',
         author: 'S.A. Chakraborty',
         desc: 'On the streets of eighteenth-century Cairo, Nahri is a con woman of unsurpassed skill. She makes her living swindling Ottoman nobles, hoping to one day earn enough to change her fortunes. But when Nahri accidentally summons Dara, an equally sly, darkly mysterious djinn warrior, during one of her cons, she learns that even the cleverest of schemes can have deadly consequences.',
         rating: 4.15
