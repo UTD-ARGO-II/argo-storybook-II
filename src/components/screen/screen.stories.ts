@@ -6,7 +6,6 @@ const meta = {
   title: 'Example/screen',
   component: screen,
   parameters: {
-    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
     layout: 'fullscreen',
   },
 } satisfies Meta<typeof screen>;

@@ -18,13 +18,13 @@ export interface BookLayoutProps {
 
 function badgeComponent(badge: string) {
 	if (badge) {
-		return (<div> <Chip label={badge} size="small" color="secondary" /></div>);
+		return (<div> <Chip label={badge} size="medium" color="secondary" /></div>);
 	}
 }
 
 function headerComponent(header: string) {
 	if (header) {
-		return (<div style={{marginBottom: '10px', fontWeight: 'bold'}}> <h3 style={{marginTop: 0, marginBottom: 0}}> {header} </h3> </div>);
+		return (<div style={{marginBottom: '10px', fontWeight: 'bold'}}> <h3 style={{marginTop: 8, marginBottom: 8}}> {header} </h3> </div>);
 	}
 }
 
@@ -92,7 +92,7 @@ function imageOrientation(
 
 const BookLayout = ({
 	variant='default',
-	align='left',
+	align='center',
 	img, 
 	imgWidth,
 	imgHeight,
